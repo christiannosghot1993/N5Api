@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRestN5", "ApiRestN5.csproj", "{4357D848-BF36-48AB-B100-5B18A8FE1354}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiRestN5", "ApiRestN5.csproj", "{4357D848-BF36-48AB-B100-5B18A8FE1354}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPatternDesign", "..\RepositoryPatternDesign\RepositoryPatternDesign.csproj", "{60F79676-5697-4A3B-BE4B-E3740F69C692}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositoryPatternDesign", "..\RepositoryPatternDesign\RepositoryPatternDesign.csproj", "{60F79676-5697-4A3B-BE4B-E3740F69C692}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWorkPatternDesign", "..\UnitOfWorkPatternDesign\UnitOfWorkPatternDesign.csproj", "{1356AF57-9DD8-4244-9BAF-0D2E6EB7E9E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{60F79676-5697-4A3B-BE4B-E3740F69C692}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60F79676-5697-4A3B-BE4B-E3740F69C692}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60F79676-5697-4A3B-BE4B-E3740F69C692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1356AF57-9DD8-4244-9BAF-0D2E6EB7E9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1356AF57-9DD8-4244-9BAF-0D2E6EB7E9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1356AF57-9DD8-4244-9BAF-0D2E6EB7E9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1356AF57-9DD8-4244-9BAF-0D2E6EB7E9E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using RepositoryPatternDesign;
 using RepositoryPatternDesign.Models;
+using UnitOfWorkPatternDesign;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,7 @@ builder.Services.AddDbContext<N5CodeChallengeContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Connection"));
 });
-builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
 
 var app = builder.Build();
 

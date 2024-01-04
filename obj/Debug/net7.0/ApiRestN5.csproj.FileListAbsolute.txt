@@ -76,3 +76,5 @@ C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\bin\Debug\net7.0\runtimes\win\lib\net6.0
 C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\bin\Debug\net7.0\RepositoryPatternDesign.dll
 C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\bin\Debug\net7.0\RepositoryPatternDesign.pdb
+C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\bin\Debug\net7.0\UnitOfWorkPatternDesign.dll
+C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\bin\Debug\net7.0\UnitOfWorkPatternDesign.pdb

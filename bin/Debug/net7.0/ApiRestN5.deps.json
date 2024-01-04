@@ -11,7 +11,8 @@
           "Microsoft.AspNetCore.OpenApi": "7.0.5",
           "Microsoft.EntityFrameworkCore.Design": "7.0.14",
           "RepositoryPatternDesign": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "UnitOfWorkPatternDesign": "1.0.0"
         },
         "runtime": {
           "ApiRestN5.dll": {}
@@ -615,6 +616,14 @@
         "runtime": {
           "RepositoryPatternDesign.dll": {}
         }
+      },
+      "UnitOfWorkPatternDesign/1.0.0": {
+        "dependencies": {
+          "RepositoryPatternDesign": "1.0.0"
+        },
+        "runtime": {
+          "UnitOfWorkPatternDesign.dll": {}
+        }
       }
     }
   },
@@ -1087,6 +1096,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "RepositoryPatternDesign/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnitOfWorkPatternDesign/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1161,6 +1161,19 @@
         "runtime": {
           "bin/placeholder/RepositoryPatternDesign.dll": {}
         }
+      },
+      "UnitOfWorkPatternDesign/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "RepositoryPatternDesign": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UnitOfWorkPatternDesign.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnitOfWorkPatternDesign.dll": {}
+        }
       }
     }
   },
@@ -3304,6 +3317,11 @@
       "type": "project",
       "path": "../RepositoryPatternDesign/RepositoryPatternDesign.csproj",
       "msbuildProject": "../RepositoryPatternDesign/RepositoryPatternDesign.csproj"
+    },
+    "UnitOfWorkPatternDesign/1.0.0": {
+      "type": "project",
+      "path": "../UnitOfWorkPatternDesign/UnitOfWorkPatternDesign.csproj",
+      "msbuildProject": "../UnitOfWorkPatternDesign/UnitOfWorkPatternDesign.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3311,7 +3329,8 @@
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.14",
       "RepositoryPatternDesign >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 6.4.0"
+      "Swashbuckle.AspNetCore >= 6.4.0",
+      "UnitOfWorkPatternDesign >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3350,6 +3369,9 @@
           "projectReferences": {
             "C:\\Solinneg\\N5-CODE-CHALLENGE\\RepositoryPatternDesign\\RepositoryPatternDesign.csproj": {
               "projectPath": "C:\\Solinneg\\N5-CODE-CHALLENGE\\RepositoryPatternDesign\\RepositoryPatternDesign.csproj"
+            },
+            "C:\\Solinneg\\N5-CODE-CHALLENGE\\UnitOfWorkPatternDesign\\UnitOfWorkPatternDesign.csproj": {
+              "projectPath": "C:\\Solinneg\\N5-CODE-CHALLENGE\\UnitOfWorkPatternDesign\\UnitOfWorkPatternDesign.csproj"
             }
           }
         }
