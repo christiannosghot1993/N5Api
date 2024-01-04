@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRestN5", "ApiRestN5.csproj", "{4357D848-BF36-48AB-B100-5B18A8FE1354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPatternDesign", "..\RepositoryPatternDesign\RepositoryPatternDesign.csproj", "{60F79676-5697-4A3B-BE4B-E3740F69C692}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4357D848-BF36-48AB-B100-5B18A8FE1354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4357D848-BF36-48AB-B100-5B18A8FE1354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4357D848-BF36-48AB-B100-5B18A8FE1354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4357D848-BF36-48AB-B100-5B18A8FE1354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F79676-5697-4A3B-BE4B-E3740F69C692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F79676-5697-4A3B-BE4B-E3740F69C692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F79676-5697-4A3B-BE4B-E3740F69C692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F79676-5697-4A3B-BE4B-E3740F69C692}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA15C2C4-92EC-4D84-9A78-5D35E561DDB7}
+	EndGlobalSection
+EndGlobal
