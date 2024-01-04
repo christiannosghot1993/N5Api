@@ -8,11 +8,11 @@
     ".NETCoreApp,Version=v7.0": {
       "ApiRestN5/1.0.0": {
         "dependencies": {
+          "CqrsPatternDesign": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.5",
           "Microsoft.EntityFrameworkCore.Design": "7.0.14",
           "RepositoryPatternDesign": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.4.0",
-          "UnitOfWorkPatternDesign": "1.0.0"
+          "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
           "ApiRestN5.dll": {}
@@ -608,6 +608,15 @@
           }
         }
       },
+      "CqrsPatternDesign/1.0.0": {
+        "dependencies": {
+          "RepositoryPatternDesign": "1.0.0",
+          "UnitOfWorkPatternDesign": "1.0.0"
+        },
+        "runtime": {
+          "CqrsPatternDesign.dll": {}
+        }
+      },
       "RepositoryPatternDesign/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.14",
@@ -1094,6 +1103,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "CqrsPatternDesign/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "RepositoryPatternDesign/1.0.0": {
       "type": "project",

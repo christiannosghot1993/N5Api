@@ -1,3 +1,6 @@
+using CqrsPatternDesign.Permisos;
+using CqrsPatternDesign.PermisosCommand;
+using CqrsPatternDesign.PermisosQuery;
 using Microsoft.EntityFrameworkCore;
 using RepositoryPatternDesign;
 using RepositoryPatternDesign.Models;
@@ -16,6 +19,8 @@ builder.Services.AddDbContext<N5CodeChallengeContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Connection"));
 });
 builder.Services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
+builder.Services.AddScoped(typeof(IPermisoCommandHandler), typeof(PermisoCommandHandler));
+builder.Services.AddScoped(typeof(IPermisoQueryHandler), typeof(PermisoQueryHandler));
 
 var app = builder.Build();
 

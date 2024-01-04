@@ -1,3 +1,6 @@
+using CqrsPatternDesign.Permisos;
+using CqrsPatternDesign.PermisosCommand;
+using CqrsPatternDesign.PermisosQuery;
 using Microsoft.AspNetCore.Mvc;
 using RepositoryPatternDesign;
 using RepositoryPatternDesign.Models;
@@ -16,38 +19,28 @@ namespace ApiRestN5.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IPermisoCommandHandler _commandHandler;
+        private readonly IPermisoQueryHandler _queryHandler;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IUnitOfWork unitOfWork)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IPermisoCommandHandler commandHandler, IPermisoQueryHandler queryHandler, IUnitOfWork unitOfWork)
         {
             _logger = logger;
+            _commandHandler = commandHandler;
+            _queryHandler = queryHandler;
             _unitOfWork = unitOfWork;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-            try
+            var command = new PermisoCommand
             {
-                var _tipoPermiso = new TipoPermiso { Descripcion = "Permiso por calamidad médica 2" };
-                IRepository<TipoPermiso> tipoPermiso = _unitOfWork.TipoPermiso;
-                tipoPermiso.Add(_tipoPermiso);
-                throw new Exception("Forzando error para probar rollback");
-
-                IRepository<Permiso> permiso = _unitOfWork.Permiso;
-                permiso.Add(new Permiso
-                {
-                    NombreEmpleado = "Christian",
-                    ApellidoEmpleado = "Suárez",
-                    FechaPermiso = DateTime.Now,
-                    TipoPermisoNavigation = _tipoPermiso
-                });
-                _unitOfWork.Save();
-            }
-            catch (Exception)
-            {
-
-                _unitOfWork.RollBack();
-            }
+                NombreEmpleado = "Hernán",
+                ApellidoEmpleado = "Suárez",
+                FechaPermiso = DateTime.Now,
+                TipoPermisoNavigation = new TipoPermiso { Descripcion = "Permiso enfermedad hijos" }
+            };
+            var resp = _commandHandler.RequestPermission(command);
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

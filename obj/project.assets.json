@@ -1148,6 +1148,20 @@
           }
         }
       },
+      "CqrsPatternDesign/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "RepositoryPatternDesign": "1.0.0",
+          "UnitOfWorkPatternDesign": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CqrsPatternDesign.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CqrsPatternDesign.dll": {}
+        }
+      },
       "RepositoryPatternDesign/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3313,6 +3327,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "CqrsPatternDesign/1.0.0": {
+      "type": "project",
+      "path": "../CqrsPatternDesign/CqrsPatternDesign.csproj",
+      "msbuildProject": "../CqrsPatternDesign/CqrsPatternDesign.csproj"
+    },
     "RepositoryPatternDesign/1.0.0": {
       "type": "project",
       "path": "../RepositoryPatternDesign/RepositoryPatternDesign.csproj",
@@ -3326,11 +3345,11 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "CqrsPatternDesign >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.14",
       "RepositoryPatternDesign >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 6.4.0",
-      "UnitOfWorkPatternDesign >= 1.0.0"
+      "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
   "packageFolders": {
@@ -3367,11 +3386,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Solinneg\\N5-CODE-CHALLENGE\\CqrsPatternDesign\\CqrsPatternDesign.csproj": {
+              "projectPath": "C:\\Solinneg\\N5-CODE-CHALLENGE\\CqrsPatternDesign\\CqrsPatternDesign.csproj"
+            },
             "C:\\Solinneg\\N5-CODE-CHALLENGE\\RepositoryPatternDesign\\RepositoryPatternDesign.csproj": {
               "projectPath": "C:\\Solinneg\\N5-CODE-CHALLENGE\\RepositoryPatternDesign\\RepositoryPatternDesign.csproj"
-            },
-            "C:\\Solinneg\\N5-CODE-CHALLENGE\\UnitOfWorkPatternDesign\\UnitOfWorkPatternDesign.csproj": {
-              "projectPath": "C:\\Solinneg\\N5-CODE-CHALLENGE\\UnitOfWorkPatternDesign\\UnitOfWorkPatternDesign.csproj"
             }
           }
         }

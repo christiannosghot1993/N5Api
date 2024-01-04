@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CqrsPatternDesign\CqrsPatternDesign.csproj" />
     <ProjectReference Include="..\RepositoryPatternDesign\RepositoryPatternDesign.csproj" />
-    <ProjectReference Include="..\UnitOfWorkPatternDesign\UnitOfWorkPatternDesign.csproj" />
   </ItemGroup>
 
 </Project>
