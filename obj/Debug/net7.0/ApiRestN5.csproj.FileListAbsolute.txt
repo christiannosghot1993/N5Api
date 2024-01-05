@@ -80,3 +80,5 @@ C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\bin\Debug\net7.0\UnitOfWorkPatternDesign
 C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\bin\Debug\net7.0\UnitOfWorkPatternDesign.pdb
 C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\bin\Debug\net7.0\CqrsPatternDesign.dll
 C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\bin\Debug\net7.0\CqrsPatternDesign.pdb
+C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\bin\Debug\net7.0\ApiRestN5.xml
+C:\Solinneg\N5-CODE-CHALLENGE\ApiRestN5\obj\Debug\net7.0\ApiRestN5.xml

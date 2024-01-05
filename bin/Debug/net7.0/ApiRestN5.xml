@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiRestN5</name>
+    </assembly>
+    <members>
+        <member name="T:ApiRestN5.Controllers.PermisosController">
+            <summary>
+            Hola
+            </summary>
+        </member>
+        <member name="M:ApiRestN5.Controllers.PermisosController.Get">
+            <summary>
+            Obtiene un listado de todos los permisos con su respectivo tipo de permiso
+            </summary>
+            <returns>Lista de permisos</returns>
+        </member>
+        <member name="M:ApiRestN5.Controllers.PermisosController.Post(CqrsPatternDesign.Permisos.PermisoCommand)">
+            <summary>
+            Inserta un permiso en la base de datos
+            </summary>
+            <param name="permiso">
+            
+            Se debe enviar siempre cero en el parámetro id 
+            (En el caso de enviar un valor diferente de cero, el funcionamiento no se alterará).
+            
+            Cuando es una inserción de permiso asociado a un tipo de permiso existente, 
+            se debe enviar el tipoPermiso con el id del tipo de permiso a asociar (tipo de permiso existente) y
+            el parámetro descripcionTipoPermiso debe ir vacío. 
+            Si se llena el parámetro descripcionTipoPermiso, el sistema no alterará su funcionamiento.
+            
+            Por otro lado, cuando la inserción del permiso no se enlaza con un tipo de permiso existente, el parámetro 
+            tipoPermiso debe ir con cero (0), y descripcionTipoPermiso debe tener la descripción del nuevo tipo de permiso.
+            </param>
+            <returns>
+            Status code 200 (Solicitud Correcta)
+            Status code 400 (Error en la solicitud)
+            </returns>
+        </member>
+        <member name="M:ApiRestN5.Controllers.PermisosController.Put(CqrsPatternDesign.Permisos.PermisoCommand)">
+            <summary>
+            Actualiza la información de un permiso en la base de datos
+            </summary>
+            <param name="permiso">
+            El parámetro id siempre debe venir con un valor diferente de cero, haciendo referencia al
+            id del permiso que se desea modificar.
+            
+            Por otro lado, el parámetro tipoPermiso, también siempre debe venir con el id del tipo de 
+            permiso a relacionar, por lo tanto, el parámetro descripcionTipoPermiso debe venir vacío 
+            (Si se llena el parámetro descripcionTipoPermiso no afectará en el funcionamiento del API).
+            </param>
+            <returns>
+            Status code 200 (Solicitud Correcta)
+            Status code 400 (Error en la solicitud) 
+            </returns>
+        </member>
+    </members>
+</doc>
