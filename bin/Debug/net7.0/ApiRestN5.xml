@@ -54,5 +54,18 @@
             Status code 400 (Error en la solicitud) 
             </returns>
         </member>
+        <member name="M:ApiRestN5.Controllers.PermisosController.GetTipoPermisos">
+            <summary>
+            Obtiene listado de tipos de permisos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiRestN5.Controllers.PermisosController.GetPermisoById(System.Int32)">
+            <summary>
+            Obtiene un permiso en especifico por id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

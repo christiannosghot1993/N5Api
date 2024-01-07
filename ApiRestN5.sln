@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiRestN5", "ApiRestN5.cspr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositoryPatternDesign", "..\RepositoryPatternDesign\RepositoryPatternDesign.csproj", "{60F79676-5697-4A3B-BE4B-E3740F69C692}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWorkPatternDesign", "..\UnitOfWorkPatternDesign\UnitOfWorkPatternDesign.csproj", "{1356AF57-9DD8-4244-9BAF-0D2E6EB7E9E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitOfWorkPatternDesign", "..\UnitOfWorkPatternDesign\UnitOfWorkPatternDesign.csproj", "{1356AF57-9DD8-4244-9BAF-0D2E6EB7E9E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqrsPatternDesign", "..\CqrsPatternDesign\CqrsPatternDesign.csproj", "{69C8C5DB-B8BD-4DC4-ADDF-B89CBDC90D75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqrsPatternDesign", "..\CqrsPatternDesign\CqrsPatternDesign.csproj", "{69C8C5DB-B8BD-4DC4-ADDF-B89CBDC90D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRestN5.Tests", "..\ApiRestN5.Tests\ApiRestN5.Tests.csproj", "{D041AED8-3608-4E19-924A-19C402268D07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{69C8C5DB-B8BD-4DC4-ADDF-B89CBDC90D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69C8C5DB-B8BD-4DC4-ADDF-B89CBDC90D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69C8C5DB-B8BD-4DC4-ADDF-B89CBDC90D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D041AED8-3608-4E19-924A-19C402268D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D041AED8-3608-4E19-924A-19C402268D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D041AED8-3608-4E19-924A-19C402268D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D041AED8-3608-4E19-924A-19C402268D07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

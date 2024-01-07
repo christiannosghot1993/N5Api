@@ -102,5 +102,29 @@ namespace ApiRestN5.Controllers
             }
         }
 
+        /// <summary>
+        /// Obtiene listado de tipos de permisos
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetPermissionsType")]
+        public List<TipoPermiso> GetTipoPermisos()
+        {
+            List<TipoPermiso> tipoPermisos = _queryHandler.GetPermissionsType();
+            return tipoPermisos;
+        }
+
+        /// <summary>
+        /// Obtiene un permiso en especifico por id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetPermissionById")]
+        public Permiso GetPermisoById(int id)
+        {
+            return _queryHandler.getPermisoById(id);
+        }
+
     }
 }
